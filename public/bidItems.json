@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Rolex Submariner",
+    "description": "Rare 1960s Rolex Submariner watch in excellent condition with original box and papers.",
+    "currentBidPrice": 12500.0,
+    "timeLeft": "2 days 4 hours",
+    "bidsCount": 14,
+    "image": "Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "Signed Picasso Lithograph",
+    "description": "Authentic signed lithograph by Pablo Picasso from his 1950s series, certificate of authenticity included.",
+    "currentBidPrice": 8750.0,
+    "timeLeft": "1 day 12 hours",
+    "bidsCount": 8,
+    "image": "Bid2-min.png"
+  },
+  {
+    "id": 3,
+    "title": "Antique Persian Rug",
+    "description": "Hand-woven 19th century Persian rug, 8x10 feet, excellent condition with vibrant colors.",
+    "currentBidPrice": 3200.0,
+    "timeLeft": "3 days 6 hours",
+    "bidsCount": 5,
+    "image": "Bid3-min.png"
+  },
+  {
+    "id": 4,
+    "title": "First Edition Harry Potter",
+    "description": "Rare first edition of Harry Potter and the Philosopher's Stone, excellent condition with original dust jacket.",
+    "currentBidPrice": 15000.0,
+    "timeLeft": "6 hours 30 minutes",
+    "bidsCount": 22,
+    "image": "Bid4-min.png"
+  },
+  {
+    "id": 5,
+    "title": "1957 Gibson Les Paul",
+    "description": "Vintage 1957 Gibson Les Paul electric guitar in sunburst finish, all original parts.",
+    "currentBidPrice": 25000.0,
+    "timeLeft": "5 days 2 hours",
+    "bidsCount": 11,
+    "image": "Bid5-min.png"
+  },
+  {
+    "id": 6,
+    "title": "Rare Blue Mauritius Stamp",
+    "description": "Extremely rare 1847 Post Office Mauritius one penny stamp in good condition for its age.",
+    "currentBidPrice": 18000.0,
+    "timeLeft": "1 day 8 hours",
+    "bidsCount": 17,
+    "image": "Bid6-min.png"
+  }
+]
