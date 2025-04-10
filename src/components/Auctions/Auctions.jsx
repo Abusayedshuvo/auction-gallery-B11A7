@@ -6,21 +6,33 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Auctions = () => {
   const [favorites, setFavorites] = useState([]);
+  const [totalBid, setTotalBid] = useState(0);
 
   const handleBid = (bid, event) => {
+    const isAlready = favorites.find((item) => item.id == bid.id);
+    if (isAlready) {
+      return;
+    }
     const newFavorite = [...favorites, bid];
     setFavorites(newFavorite);
     toast("Favorite Item is added");
+
+    const updatedBid = totalBid + bid.currentBidPrice;
+    setTotalBid(updatedBid);
+
     const btn = event.target.parentNode;
     btn.setAttribute("disabled", "");
-    const findBid = favorites.find((item) => item.id == bid.id);
-    console.log(findBid);
+
+    // const findFavorites = favorites.find((item) => item.id == bid.id);
   };
 
   const handleFavorite = (id) => {
     const filterFavorites = favorites.filter((item) => item.id !== id);
     setFavorites(filterFavorites);
-    console.log(id);
+    const findFavorites = favorites.find((item) => item.id == id);
+
+    const updatedBid = totalBid - findFavorites.currentBidPrice;
+    setTotalBid(updatedBid);
   };
 
   return (
@@ -42,6 +54,7 @@ const Auctions = () => {
               <Favorite
                 favorites={favorites}
                 handleFavorite={handleFavorite}
+                totalBid={totalBid}
               ></Favorite>
             </div>
           </div>
