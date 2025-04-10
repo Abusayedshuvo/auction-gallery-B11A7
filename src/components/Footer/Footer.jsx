@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="text-center bg-white xl:py-20 text-black">
+    <div className="text-center bg-white py-10 xl:py-20 text-black">
       <img className="mx-auto" src="logo.png" alt="" />
       <div className="text-xl my-2 space-x-3">
         <a href="#">Bid.</a>

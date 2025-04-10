@@ -1,4 +1,5 @@
 import React from "react";
+import { HiOutlineBell } from "react-icons/hi2";
 
 const Navbar = () => {
   const menus = (
@@ -53,6 +54,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 text-black">{menus}</ul>
         </div>
         <div className="navbar-end">
+          <div className="bg-[#EBF0F5] w-10 h-10 rounded-full flex items-center justify-center mr-5 relative text-[#0E2954]">
+            <span className="text-xs bg-[#0E2954] text-white w-4 h-4 rounded-full text-center absolute right-1 top-1">
+              9
+            </span>
+            <HiOutlineBell size={22} />
+          </div>
           <img className="w-10 h-10 rounded-full" src="user.jpg" alt="" />
         </div>
       </div>

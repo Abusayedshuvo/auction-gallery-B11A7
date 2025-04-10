@@ -18,9 +18,9 @@ const Table = ({ loadData, handleBid }) => {
           {bidItems?.map((bid) => (
             <tr key={bid.id}>
               <td>
-                <div className="flex gap-3">
+                <div className="xl:flex gap-3">
                   <img
-                    className="w-20 h-20 object-cover"
+                    className="w-14 xl:w-20 h-14 xl:h-20 object-cover"
                     src={bid.image}
                     alt=""
                   />

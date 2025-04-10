@@ -22,6 +22,7 @@ const Auctions = () => {
 
     const btn = event.target.parentNode;
     btn.setAttribute("disabled", "");
+    btn.classList.add("text-red-500");
 
     // const findFavorites = favorites.find((item) => item.id == bid.id);
   };
@@ -38,18 +39,18 @@ const Auctions = () => {
   return (
     <>
       <ToastContainer autoClose={1000} />
-      <div className="bg-[#f4f4f4] xl:px-36 py-32">
+      <div className="bg-[#f4f4f4] px-4 xl:px-36 py-20 xl:py-32">
         <p className="text-3xl font-medium mb-2">Active Auctions</p>
         <p>Discover and bid on extraordinary items</p>
         <div className="grid grid-cols-12 gap-5 mt-5">
-          <div className="col-span-9">
+          <div className=" col-span-12 xl:col-span-9">
             <div className="bg-white p-5 rounded-lg">
               <Suspense fallback={<h1>Loading ............</h1>}>
                 <Table loadData={loadData} handleBid={handleBid}></Table>
               </Suspense>
             </div>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-12 xl:col-span-3">
             <div className="bg-white p-5 rounded-lg">
               <Favorite
                 favorites={favorites}

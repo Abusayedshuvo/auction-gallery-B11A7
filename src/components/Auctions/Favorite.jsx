@@ -9,31 +9,29 @@ const Favorite = ({ favorites, handleFavorite, totalBid }) => {
         <FaRegHeart /> Favorite Items
       </p>
       {favorites.map((favorite, index) => (
-        <>
-          <div key={index} className="flex my-4 justify-between items-start">
-            <div className="flex gap-4">
-              <img
-                className="w-20 h-20 object-cover"
-                src={favorite.image}
-                alt=""
-              />
+        <div key={index} className="flex my-4 justify-between items-start">
+          <div className="flex gap-4">
+            <img
+              className="w-20 h-20 object-cover"
+              src={favorite.image}
+              alt=""
+            />
 
-              <div>
-                <p> {favorite.title} </p>
-                <div className="flex gap-5">
-                  <p>$ {favorite.currentBidPrice}</p>
-                  <p>Bids: {favorite.bidsCount}</p>
-                </div>
+            <div>
+              <p> {favorite.title} </p>
+              <div className="flex gap-5">
+                <p>$ {favorite.currentBidPrice}</p>
+                <p>Bids: {favorite.bidsCount}</p>
               </div>
             </div>
-            <button
-              className="cursor-pointer"
-              onClick={() => handleFavorite(favorite.id)}
-            >
-              <RxCross2 />
-            </button>
           </div>
-        </>
+          <button
+            className="cursor-pointer"
+            onClick={() => handleFavorite(favorite.id)}
+          >
+            <RxCross2 />
+          </button>
+        </div>
       ))}
 
       <div className="flex justify-between text-2xl mt-10">
