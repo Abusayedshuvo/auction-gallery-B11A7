@@ -14,7 +14,7 @@ const Table = ({ loadData, handleBid }) => {
             <th className="text-center">Bid Now</th>
           </tr>
         </thead>
-        <tbody className="text-[#0E2954] border-t">
+        <tbody className="text-[#0E2954]">
           {bidItems?.map((bid) => (
             <tr key={bid.id}>
               <td>
@@ -27,12 +27,12 @@ const Table = ({ loadData, handleBid }) => {
                   <p> {bid.title}</p>
                 </div>
               </td>
-              <td> {bid.currentBidPrice} </td>
+              <td> ${bid.currentBidPrice} </td>
               <td> {bid.timeLeft} </td>
               <td className="text-center">
                 <button
-                  className="cursor-pointer"
-                  onClick={() => handleBid(bid)}
+                  className="cursor-pointer disabled:cursor-no-drop"
+                  onClick={() => handleBid(bid, event)}
                 >
                   <FaRegHeart />
                 </button>

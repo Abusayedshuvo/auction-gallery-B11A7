@@ -6,10 +6,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-tbody tr {
+tbody tr,
+thead tr {
   border-bottom: solid 1px #ddd;
 }
 
-tbody tr td {
+tbody tr td,
+thead tr th {
   padding: 20px 0;
 }
